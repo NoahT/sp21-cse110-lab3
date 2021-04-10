@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab Two - Journal Entries</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/favicon_io/site.webmanifest">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>Lab Two - Journal Entries for 4/7/21-4/9/21</header>
+
+	<details>
+		<summary>Table of Contents</summary>
+		<nav id="entries">
+			<ol>
+				<li><a href="#journal_040721">Journal 4/7/21</a></li>
+				<li><a href="#journal_040821">Journal 4/8/21</a></li>
+				<li><a href="#journal_040921">Journal 4/9/21</a></li>
+			</ol>
+		</nav>
+	</details>
+	<hr>
+	<main>
+	<h1>Journals</h1>
+	<section id="journal_040721">
+		<h2>Journal 4/7/21</h2>
+		<h3>What happened today</h3>
+		<p>Today, I spent most of my time going over new lecture material. Listed below is a summary of the most important things done.</p>
+		<ul>
+			<li><b>Lecture for COGS118B</b>. This covered <i>Bayesian parameter estimation</i>, review of <i>maximum likelihood estimation</i>, and <i>entropy</i>. Also received clarification for the distinction between the Bayesian and Frequentist approach for parameter estimation: <strong>Bayesian parameter estimation treats the unknown parameters as random variables, whereas maximum likelihood estimation treats the unknown parameters as fixed (but unknown).</strong></li>
+			<li><b>Lecture for ECE196</b>. This was three hours of open-ended time for doing data analysis and inference on any dataset with <a href="https://scikit-learn.org/stable/">scikit-learn</a>, <a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://pandas.pydata.org/">Pandas</a>, and <a href="https://numpy.org/">NumPy</a>. I <em>was</em> going to use this window to work more on my project for this class, but <em>instead</em> attended and spent my time practicing categorical data encoding techniques (specifically dummy and one hot encoding).
+			</li>
+			<li><b>Worked on recommender systems project</b>. This is my chosen project for ECE196. I am currently working towards building the <i>embedding model</i> with <i>matrix factorization</i>.</li>
+		</ul>
+		<h3>What else happened today</h3>
+		<p>Tachii turned three years old. Here's a picture of him being adorable (: .</p>
+		<img src="/pictures/IMG_2265.jpg">
+	</section>
+	<hr>
+	<section id="journal_040821">
+		<h2>Journal 4/8/21</h2>
+		<h3>What happened today</h3>
+		<p>Today, I mainly spent time working on homework in addition to lecture. Listed below is a summary of the most important details.</p>
+		<ul>
+			<li><b>Lecture for CSE110</b>. This lecture went over the project reveal for all groups, in addition to problem complexity with the Cynefin framework. This lecture built off of Tuesday's lecture with group management. Since teams were already introduced, we <em>also</em> received group management assignments, such as organizing a bonding activity and branding our team.
+			<li><b>Assignment for COGS118B</b>. This assignment mainly covered the topics listed before: <i>Maximum likelihood</i> and <i>Bayesian inference</i> for parameter estimation, finding a <i>posterior predictive distribution</i>, plotting data with MATLAB</li>
+		</ul>
+		<h3>What else happened today</h3>
+		<p>Found a great video on Bayesian parameter estimation.</p>
+		<video controls>
+			<source src="/video/Bayes Estimation.mp4" type="video/mp4">
+		</video>
+	</section>
+	<hr>
+	<section id="journal_040921">
+		<h2>Journal 4/9/21</h2>
+		<h3>What happened today</h3>
+		<p>The majority of my time today was spent typesetting my assignments. The most important notes are summarized below:</p>
+		<ul>
+			<li><b>Typeset COGS118B assignment in LaTeX.</b> Nothing else to really add about this; I do it because my handwriting is abysmal.</li>
+			<li><b>COGS118B lecture.</b> We covered parameter estimation for a sample of i.i.d. <i>Normal</i> random variables.</li>
+			<li><b>DSC190 lecture.</b> Since I petitioned into this class without DSC40A, I spent my time learning about <i>linear basis function models</i> and <i>Empirical Risk Minimization</i>. Also reviewed the construction of the <i>normal equations</i> for <i>least squares regression</i> from MATH102.</li>
+
+		</ul>
+		<h3>What else happened today</h3>
+		<p>My girlfriend made a song recently. It sounds pretty good so I thought I'd share it here.</p>
+		<figure>
+			<figcaption>Diana's song, still unnamed.</figcaption>
+			<audio controls src="/audio/coffee grounds.mp3">Audio element not supported.</audio>
+		</figure>
+	</section>
+	<hr>
+
+	<h1>Make a new entry</h1>
+	<form>
+		<fieldset>
+			<div>
+				<label for="journal_title">Journal title</label>
+				<input type="text" id="journal_title" required>
+			</div>
+
+			<div>
+				<label for="journal_date">Journal Date</label>
+				<input type="date" id="journal_date" name="journal_date" required>
+			</div>
+
+			<div>
+				<p>Is this a weekday post?</p>
+				<label for="weekday_yes">Yes</label>
+				<input type="radio" id="weekday_yes" name="weekday" value="yes">
+
+				<label for="weekday_no">No</label>
+				<input type="radio" id="weekday_no" name="weekday" value="no">
+			</div>
+
+			<div>
+				<p>Topic of post</p>
+				<div>
+					<label for="topics_academic">Academic</label>
+					<input type="checkbox" id="topics_academic" name="academic" value="academic">
+				</div>
+
+				<div>
+					<label for="topics_social">Social</label>
+					<input type="checkbox" id="topics_social" name="social" value="social">
+				</div>
+				
+				<div>
+					<label for="topics_other">Other</label>
+					<input type="checkbox" id="topics_other" name="other" value="other">
+				</div>
+			</div>
+
+			<div>
+				<label for="journal_mood_choice">Mood of post</label>
+
+				<input list="journal_mood" id="journal_mood_choice" name="journal_mood_choice">
+
+				<datalist id="journal_mood">
+					<option value="Informal">
+					<option value="Formal">
+					<option value="Worried">
+					<option value="Optimistic">
+					<option value="Overwhelmed">
+					<option value="Neutral">
+				</datalist>
+			</div>
+
+			<div>
+				<label for="journal_entry">Enter journal here </label>
+				<textarea id="journal_entry" name="journal_entry" cols="80" rows="10" required></textarea>
+			</div>
+
+			<div>
+				<label for="journal_post_when">Select when to post</label>
+				<select name="journal_post_when" id="journal_post_when">
+					<option value="Now">Now</option>
+					<option value="One hour">In one hour</option>
+					<option value="Two hours">In two hours</option>
+					<option value="Six hours">In six hours</option>
+				</select>
+			</div>
+
+			<button>Submit</button>
+
+		</fieldset>
+	</form>
+	</main>
+
+	<footer>If interested, here is my <a href="https://www.linkedin.com/in/noah-teshima-59737a16b/" target="blank">LinkedIn</a>.
+		<div class="lonely_div">
+			<span class="lonely_span">I didn't know where else to include this, so here is some text in a lonely span</span>.<br><em>This</em> text isn't in our lonely span...<br>
+			...but is still nested in a lonely div.
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
