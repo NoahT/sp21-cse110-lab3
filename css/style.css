@@ -18,3 +18,30 @@ header {
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3, h4, h5 {
+    font-size: 2em;
+}
+
+
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 2cm 0em 0em 0em;
+    margin: 0px;
+
+    display:block;
+    
+    background-color: rgba(0, 187, 255, .5);
+    -webkit-clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+}
