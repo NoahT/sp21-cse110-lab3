@@ -32,6 +32,25 @@ h3, h4, h5 {
     font-size: 2em;
 }
 
+li, a {
+    text-decoration: none;
+}
+
+a {
+    transition: color .5s ease, font-size .5s ease;
+    color: hsla(0, 100%, 50%, 1);
+    display: inline;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a9a9a9;
+    font-size: 1.1rem;
+}
+
 
 footer {
     width: 100%;
