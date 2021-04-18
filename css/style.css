@@ -26,7 +26,11 @@
     justify-content: space-around;
     align-items: center;
 
-    padding: 0 10vw 0 10vw;
+    /* padding: 0 10vw 0 10vw; */
+}
+
+summary#table-of-contents:active {
+    color: hsla(0, 100%, 50%, 1);
 }
 
 
@@ -50,6 +54,20 @@
     display: block;
     min-width: 20vw;
     max-width: 30vw;
+}
+
+details {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+summary ~ nav {
+    font-size: 1.1em;
+}
+
+main + hr {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 body {
@@ -110,8 +128,8 @@ hr {
     margin-bottom: 5vh;
 }
 
-p {
-    text-indent: 1pc;
+body  p {
+    text-indent: 5pc;
 }
 
 .journal-list > li {
@@ -120,6 +138,35 @@ p {
 
 .journal-list > li:last-of-type {
     margin-bottom: none;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    justify-items: stretch;
+    grid-auto-flow: row;
+
+}
+
+.grid-item {
+    text-align: center;
+    align-content: center;
+}
+
+.grid-item div {
+    display: inline;
+}
+
+.form-desc > div > div {
+    display: inline-block;
+}
+
+
+input[type="checkbox"] {
+    height:1.5rem;
+    width:1.5rem;
 }
 
 footer {
@@ -136,3 +183,14 @@ footer {
 }
 
 
+@media screen and (min-width: 480px) {
+    #container-journals {
+        padding: 0
+    }
+}
+
+@media screen and (min-width: 720px) {
+    #container-journals {
+        padding: 0 10vw 0 10vw
+    }
+}

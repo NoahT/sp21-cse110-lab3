@@ -23,7 +23,7 @@
 		<header style="font-weight: bolder;">Lab Two - Journal Entries for 4/7/21-4/9/21</header>
 
 		<details>
-			<summary>Table of Contents</summary>
+			<summary id="table-of-contents">Table of Contents</summary>
 			<nav id="entries">
 				<ol>
 					<li><a href="#journal_040721">Journal 4/7/21</a></li>
@@ -88,71 +88,73 @@
 		<h1>Make a new entry</h1>
 		<form>
 			<fieldset>
-				<div>
-					<label for="journal_title">Journal title</label>
-					<input type="text" id="journal_title" required>
-				</div>
-
-				<div>
-					<label for="journal_date">Journal Date</label>
-					<input type="date" id="journal_date" name="journal_date" required>
-				</div>
-
-				<div>
-					<p>Is this a weekday post?</p>
-					<label for="weekday_yes">Yes</label>
-					<input type="radio" id="weekday_yes" name="weekday" value="yes">
-
-					<label for="weekday_no">No</label>
-					<input type="radio" id="weekday_no" name="weekday" value="no">
-				</div>
-
-				<div>
-					<p>Topic of post</p>
-					<div>
-						<label for="topics_academic">Academic</label>
-						<input type="checkbox" id="topics_academic" name="academic" value="academic">
+				<div class="grid-container">
+					<div class="grid-item">
+						<label for="journal_title">Journal title</label>
+						<input type="text" id="journal_title" required>
 					</div>
-
-					<div>
-						<label for="topics_social">Social</label>
-						<input type="checkbox" id="topics_social" name="social" value="social">
+	
+					<div class="grid-item">
+						<label for="journal_date">Journal Date</label>
+						<input type="date" id="journal_date" name="journal_date" required>
 					</div>
-					
-					<div>
-						<label for="topics_other">Other</label>
-						<input type="checkbox" id="topics_other" name="other" value="other">
+	
+					<div class="grid-item">
+						<p>Is this a weekday post?</p>
+						<label for="weekday_yes">Yes</label>
+						<input type="radio" id="weekday_yes" name="weekday" value="yes">
+	
+						<label for="weekday_no">No</label>
+						<input type="radio" id="weekday_no" name="weekday" value="no">
+					</div>
+	
+					<div class="grid-item">
+						<p>Topic of post</p>
+						<div>
+							<label for="topics_academic">Academic</label>
+							<input type="checkbox" id="topics_academic" name="academic" value="academic">
+						</div>
+	
+						<div>
+							<label for="topics_social">Social</label>
+							<input type="checkbox" id="topics_social" name="social" value="social">
+						</div>
+						
+						<div>
+							<label for="topics_other">Other</label>
+							<input type="checkbox" id="topics_other" name="other" value="other">
+						</div>
+					</div>
+	
+					<div class="grid-item">
+						<label for="journal_mood_choice">Mood of post</label>
+	
+						<input list="journal_mood" id="journal_mood_choice" name="journal_mood_choice">
+	
+						<datalist id="journal_mood">
+							<option value="Informal">
+							<option value="Formal">
+							<option value="Worried">
+							<option value="Optimistic">
+							<option value="Overwhelmed">
+							<option value="Neutral">
+						</datalist>
+					</div>
+	
+					<div class="grid-item">
+						<label for="journal_post_when">Select when to post</label>
+						<select name="journal_post_when" id="journal_post_when">
+							<option value="Now">Now</option>
+							<option value="One hour">In one hour</option>
+							<option value="Two hours">In two hours</option>
+							<option value="Six hours">In six hours</option>
+						</select>
 					</div>
 				</div>
 
-				<div>
-					<label for="journal_mood_choice">Mood of post</label>
-
-					<input list="journal_mood" id="journal_mood_choice" name="journal_mood_choice">
-
-					<datalist id="journal_mood">
-						<option value="Informal">
-						<option value="Formal">
-						<option value="Worried">
-						<option value="Optimistic">
-						<option value="Overwhelmed">
-						<option value="Neutral">
-					</datalist>
-				</div>
-
-				<div>
+				<div class="grid-item">
 					<label for="journal_entry">Enter journal here </label>
 					<textarea id="journal_entry" name="journal_entry" cols="80" rows="10" required></textarea>
-				</div>
-
-				<div>
-					<label for="journal_post_when">Select when to post</label>
-					<select name="journal_post_when" id="journal_post_when">
-						<option value="Now">Now</option>
-						<option value="One hour">In one hour</option>
-						<option value="Two hours">In two hours</option>
-						<option value="Six hours">In six hours</option>
-					</select>
 				</div>
 
 				<button>Submit</button>
