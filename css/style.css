@@ -9,6 +9,23 @@
     }
 }
 
+#page_nav {
+    position:fixed;
+    background-color:skyblue;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    z-index: 100;
+    margin: 0px 0px 0px 0px;
+}
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 header {
     font-size: 4em;
     margin: auto;
@@ -17,6 +34,7 @@ header {
     animation: header 2s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+
 }
 
 
@@ -64,3 +82,7 @@ footer {
     -webkit-clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
 }
+
+
+
+
