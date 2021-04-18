@@ -10,7 +10,7 @@
 }
 
 #page_nav {
-    position:fixed;
+    position:sticky;
     background-color:skyblue;
     width: 100%;
     height: auto;
